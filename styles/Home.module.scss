@@ -1,0 +1,10 @@
+.container {
+  --list-gap: 1rem;
+  padding: 1rem;
+
+  .list-part--wrapper {
+    margin: auto;
+    width: 100%;
+    max-width: calc(370px * 3 + var(--list-gap) * 2);
+  }
+}

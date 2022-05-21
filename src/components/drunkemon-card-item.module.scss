@@ -5,13 +5,15 @@
   --font-main-color: #404040;
   --basic-gap--mobile: 0.5rem;
 
+  list-style: none;
   position: relative;
   width: 100%;
-  max-width: 160px;
+  // max-width: 160px;
   padding: 0.25rem;
   color: var(--font-main-color);
   font-size: var(--fz-mobile);
   border-radius: 10px;
+  background: linear-gradient(to bottom, #f0b700 0%, #f8d66e 10%, #fff3d2 100%);
 
   .poke-img {
     display: flex;
@@ -33,14 +35,25 @@
       padding-bottom: var(--basic-gap--mobile);
       border-bottom: 1px solid var(--line-color);
 
-      .poke-no {
-        font-size: var(--fz-mobile);
+      .poke-no-and-type--wrapper {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: space-between;
         padding-bottom: var(--basic-gap--mobile);
       }
 
+      .poke-no {
+        font-weight: bold;
+        font-size: var(--fz-mobile);
+        opacity: 0.5;
+      }
+
       .poke-type-list--wrapper {
-        position: absolute;
-        top: 172px;
+        display: flex;
+        gap: 0.5rem;
+        // position: absolute;
+        // top: 176px;
         right: var(--basic-gap--mobile);
       }
 
@@ -57,15 +70,21 @@
 
     .poke-descp {
       padding-top: var(--basic-gap--mobile);
-      line-height: 1.3;
+      line-height: 1.6;
     }
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 0.25rem;
+    padding: 0.4rem;
     max-width: 370px;
     border-radius: 24px;
     font-size: var(--fz-pc);
+    background: linear-gradient(
+      to bottom,
+      #f0b700 0%,
+      #f8d66e 39%,
+      #fff3d2 100%
+    );
 
     .poke-img {
       border-radius: 20px;
@@ -80,13 +99,22 @@
         width: 33%;
         border-bottom: unset;
         border-right: 1px solid var(--line-color);
+
+        .poke-type-list--wrapper {
+          position: absolute;
+          top: 320px;
+          right: unset;
+          // top: ;
+          left: 1.5rem;
+        }
       }
 
       .poke-descp--wrapper {
         display: flex;
         align-items: center;
+        padding-left: 1rem;
         width: 66%;
-        height: 100%;
+        // height: 100%;
       }
     }
   }

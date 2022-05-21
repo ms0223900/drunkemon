@@ -1,4 +1,6 @@
 declare module 'common-types' {
+  import { PokemonTypeEnum } from 'src/types';
+
   type ID = string | number;
 
   interface CommonImage {
@@ -6,18 +8,11 @@ declare module 'common-types' {
     src: string;
   }
 
-  enum PokemonTypeEnum {
-    normal = 'normal',
-  }
-
-  enum PokemonRegionEnum {
-    kanto = 'kanto',
-  }
-
   interface SingleDrunkemon {
     id: ID;
     pokemonNo: number;
     pokemonTypeList: PokemonTypeEnum[];
+    specialType?: string; // Mega, 極巨化...
     name: string;
     description: string;
     pokemonImg: CommonImage;
