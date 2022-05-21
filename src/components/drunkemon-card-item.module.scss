@@ -1,0 +1,93 @@
+.drunkemon-card-item {
+  --fz-mobile: 12px;
+  --fz-pc: 14px;
+  --line-color: #e2e2e2;
+  --font-main-color: #404040;
+  --basic-gap--mobile: 0.5rem;
+
+  position: relative;
+  width: 100%;
+  max-width: 160px;
+  padding: 0.25rem;
+  color: var(--font-main-color);
+  font-size: var(--fz-mobile);
+  border-radius: 10px;
+
+  .poke-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .poke-content--wrapper {
+    padding: var(--basic-gap--mobile);
+
+    .poke-basic-info {
+      padding-bottom: var(--basic-gap--mobile);
+      border-bottom: 1px solid var(--line-color);
+
+      .poke-no {
+        font-size: var(--fz-mobile);
+        padding-bottom: var(--basic-gap--mobile);
+      }
+
+      .poke-type-list--wrapper {
+        position: absolute;
+        top: 172px;
+        right: var(--basic-gap--mobile);
+      }
+
+      .poke-name {
+        padding-bottom: 0.75rem;
+        font-size: 20px;
+        font-size: bolder;
+      }
+
+      .poke-drunk-descp {
+        // font-size: var(--fz-mobile);
+      }
+    }
+
+    .poke-descp {
+      padding-top: var(--basic-gap--mobile);
+      line-height: 1.3;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0.25rem;
+    max-width: 370px;
+    border-radius: 24px;
+    font-size: var(--fz-pc);
+
+    .poke-img {
+      border-radius: 20px;
+    }
+
+    .poke-content--wrapper {
+      display: flex;
+      padding: 0.75rem;
+      padding-top: 1rem;
+
+      .poke-basic-info {
+        width: 33%;
+        border-bottom: unset;
+        border-right: 1px solid var(--line-color);
+      }
+
+      .poke-descp--wrapper {
+        display: flex;
+        align-items: center;
+        width: 66%;
+        height: 100%;
+      }
+    }
+  }
+}
