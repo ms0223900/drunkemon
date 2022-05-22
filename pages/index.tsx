@@ -16,7 +16,14 @@ const Home: NextPage<HomeProps> = (props) => {
     <div className={styles.container}>
       <Head>
         <title>Drunkemon 醉可夢</title>
-        <meta name="description" content="Drunkemons" />
+        <meta
+          name="description"
+          content="Drunkemons 這裡只有喝醉的寶可夢，今日有酒今朝醉。"
+        />
+        <meta
+          name="google-site-verification"
+          content="5Ub9XZ7Mr0dXhHacFeVAIsYKOgw5lQOcfX0KtqanCuM"
+        />
         <link rel="icon" href="/drunkemon-icon.svg" />
       </Head>
       <main>
