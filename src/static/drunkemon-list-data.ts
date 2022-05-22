@@ -9,7 +9,7 @@ const drunkemonListData: SingleDrunkemon[] = [
     id: '01',
     pokemonNo: 1,
     pokemonImg: {
-      src: makeDrunkemonImgSrc('01'),
+      src: makeDrunkemonImgSrc('01--fixed'),
     },
     pokemonTypeList: [PokemonTypeEnum.grass],
     name: '妙蛙種子',
