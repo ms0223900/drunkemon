@@ -11,7 +11,7 @@ const drunkemonListData: SingleDrunkemon[] = [
     pokemonImg: {
       src: makeDrunkemonImgSrc('01'),
     },
-    pokemonTypeList: [PokemonTypeEnum.grass, PokemonTypeEnum.normal],
+    pokemonTypeList: [PokemonTypeEnum.grass],
     name: '妙蛙種子',
     description:
       '背上的種子可能是受到酒精的影響，比一般正常的顯得更為萎縮，乾乾癟癟臭臭的。',
