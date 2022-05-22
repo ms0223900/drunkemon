@@ -2,7 +2,7 @@ import { SingleDrunkemon } from 'common-types';
 import { PokemonTypeEnum } from 'src/types';
 
 const makeDrunkemonImgSrc = (meta = '01') =>
-  `./assets/drunkemons/drunkemon-${meta}.jpg`;
+  `./assets/drunkemons/drunkemon-${meta}.JPG`;
 
 const drunkemonListData: SingleDrunkemon[] = [
   {
