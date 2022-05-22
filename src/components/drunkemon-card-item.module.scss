@@ -13,8 +13,8 @@
   color: var(--font-main-color);
   font-size: var(--fz-mobile);
   border-radius: calc(1rem + 4px);
-  background: linear-gradient(to bottom, #f0b700 0%, #f8d66e 10%, #fff3d2 100%);
-  // border: 1px solid var(--color-main--primary);
+  // background: linear-gradient(to bottom, #f0b700 0%, #f8d66e 10%, #fff3d2 100%);
+  border: 2px solid var(--color-main--primary);
   background-color: #fff;
 
   .poke-img {
@@ -80,6 +80,7 @@
     .poke-descp {
       padding-top: var(--basic-gap--mobile);
       line-height: 1.6;
+      font-size: 16px;
     }
   }
 
@@ -88,12 +89,13 @@
     // max-width: 370px;
     border-radius: 24px;
     font-size: var(--fz-pc);
-    // background: linear-gradient(
-    //   to bottom,
-    //   #f0b700 0%,
-    //   #f8d66e 39%,
-    //   #fff3d2 100%
-    // );
+    border: unset;
+    background: linear-gradient(
+      to bottom,
+      #f0b700 0%,
+      #f8d66e 10%,
+      #fff3d2 100%
+    );
 
     .poke-img {
       border-radius: 20px;
