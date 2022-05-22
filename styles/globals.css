@@ -17,3 +17,7 @@ a {
   padding: 0;
   /* outline: 1px solid #00f; */
 }
+
+:root {
+  --color-main--primary: #f7bc00;
+}

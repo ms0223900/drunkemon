@@ -14,7 +14,11 @@ const DrunkemonCardItem = ({
   return (
     <li className={styles['drunkemon-card-item']}>
       <figure className={styles['poke-img']}>
-        <img src={pokemonImg.src} alt={pokemonImg.name || name} />
+        <img
+          src={pokemonImg.src}
+          alt={pokemonImg.name || name}
+          loading={'lazy'}
+        />
       </figure>
       <div className={styles['poke-content--wrapper']}>
         <div className={styles['poke-basic-info']}>

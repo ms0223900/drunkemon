@@ -1,10 +1,60 @@
+@use './libs/breakpoints' as *;
+
 .container {
+  position: relative;
   --list-gap: 1rem;
-  padding: 1rem;
+  // padding: 1rem;
+  min-height: 100vh;
+  // background: url('/assets/drunkemon-pattern.svg');
+
+  @mixin fullSizePsuedoEl {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before {
+    @include fullSizePsuedoEl;
+    opacity: 0.8;
+    background: url('/assets/drunkemon-pattern.svg');
+    // background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-position: 50% 0;
+    background-size: 100%;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+
+  &::after {
+    @include fullSizePsuedoEl;
+    // opacity: 0.4;
+    background: rgb(219, 219, 219);
+    z-index: -2;
+  }
+
+  > main {
+    padding: 0.5rem;
+    padding-top: 2rem;
+    max-width: 1200px;
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    // background-color: #eee;
+  }
 
   .list-part--wrapper {
     margin: auto;
     width: 100%;
     max-width: calc(370px * 3 + var(--list-gap) * 2);
+  }
+
+  @include max1200 {
+    &::before {
+      background-size: 30%;
+    }
   }
 }

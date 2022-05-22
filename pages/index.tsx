@@ -15,9 +15,9 @@ const Home: NextPage<HomeProps> = (props) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>醉可夢 Drunkemon</title>
+        <title>Drunkemon 醉可夢</title>
         <meta name="description" content="Drunkemons" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/drunkemon-icon.svg" />
       </Head>
       <main>
         <div className={styles['list-part--wrapper']}>
