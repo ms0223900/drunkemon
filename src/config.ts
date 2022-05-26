@@ -5,4 +5,5 @@ export const POKEMON_TYPE_COLORS: Record<PokemonTypeEnum, string> = {
   grass: '#9bcc50',
   fire: '#ff6900',
   water: '#14b9ff',
+  bug: '#729f3f',
 };

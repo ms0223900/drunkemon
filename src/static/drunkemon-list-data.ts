@@ -106,6 +106,37 @@ const drunkemonListData: SingleDrunkemon[] = [
     description:
       '宴會炒熱氣氛的好幫手，不只擅長跳舞，背上甲殼的噴水口還能客製化噴出各種不同的酒。',
   },
+  {
+    id: '10',
+    pokemonNo: 10,
+    pokemonImg: {
+      src: makeDrunkemonImgSrc('10'),
+    },
+    pokemonTypeList: [PokemonTypeEnum.bug],
+    name: '綠毛蟲',
+    description:
+      '喝醉的時候常常好幾隻交疊在一起，因為腳上的吸盤吸力太強而難以分離彼此。',
+  },
+  {
+    id: '11',
+    pokemonNo: 11,
+    pokemonImg: {
+      src: makeDrunkemonImgSrc('11'),
+    },
+    pokemonTypeList: [PokemonTypeEnum.bug],
+    name: '鐵甲蛹',
+    description: '因為外殼很硬，喝醉的時候就像蹺蹺板一樣左搖右擺。',
+  },
+  {
+    id: '12',
+    pokemonNo: 12,
+    pokemonImg: {
+      src: makeDrunkemonImgSrc('12'),
+    },
+    pokemonTypeList: [PokemonTypeEnum.bug],
+    name: '巴大蝶',
+    description: '採蜜採累了會在花朵上小歇一會，但常常會不小心睡過頭。',
+  },
 ];
 
 // export default Array(20)

@@ -5,6 +5,7 @@ const zhTw: Record<LocaleKeys, string> = {
   grass: '草',
   fire: '火',
   water: '水',
+  bug: '蟲',
   kanto: '關都',
 };
 

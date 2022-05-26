@@ -3,6 +3,7 @@ export enum PokemonTypeEnum {
   grass = 'grass',
   fire = 'fire',
   water = 'water',
+  bug = 'bug',
 }
 
 export enum PokemonRegionEnum {
