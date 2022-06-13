@@ -168,10 +168,30 @@ const drunkemonListData: SingleDrunkemon[] = [
     id: '13',
     pokemonNo: 13,
     pokemonImg: {
-      src: makeDrunkemonImgSrc('13'),
+      src: makeDrunkemonImgSrc('13--fixed'),
     },
     pokemonTypeList: [PokemonTypeEnum.bug],
     name: '獨角蟲',
+    description: '',
+  },
+  {
+    id: '14',
+    pokemonNo: 14,
+    pokemonImg: {
+      src: makeDrunkemonImgSrc('14--fixed'),
+    },
+    pokemonTypeList: [PokemonTypeEnum.bug],
+    name: '鐵殼蛹',
+    description: '',
+  },
+  {
+    id: '15',
+    pokemonNo: 15,
+    pokemonImg: {
+      src: makeDrunkemonImgSrc('15--fixed'),
+    },
+    pokemonTypeList: [PokemonTypeEnum.bug],
+    name: '大針蜂',
     description: '',
   },
   ...makeDrunkemonDataByIdx(14, 82, undefined, drunkemonNames),
