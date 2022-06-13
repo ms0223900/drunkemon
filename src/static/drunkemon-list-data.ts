@@ -1,8 +1,35 @@
 import { SingleDrunkemon } from 'common-types';
 import { PokemonTypeEnum } from 'src/types';
+import drunkemonNames from './drunkemon-names-data';
 
 const makeDrunkemonImgSrc = (meta = '01') =>
   `./assets/drunkemons/drunkemon-${meta}.JPG`;
+
+const makeDrunkemonDataByIdx = (
+  startIdx = 0,
+  amount = 100,
+  optionsList?: SingleDrunkemon[],
+  nameList?: string[]
+): SingleDrunkemon[] => {
+  const arr = Array(amount).fill(0);
+
+  return arr.map((a, idx) => {
+    const _idx = idx + startIdx;
+    const idxStr = _idx.toString().padStart(2, '0');
+
+    return {
+      id: _idx.toString().padStart(2, '0'),
+      pokemonNo: _idx,
+      pokemonImg: {
+        src: makeDrunkemonImgSrc(idxStr),
+      },
+      pokemonTypeList: [],
+      name: nameList ? nameList[idx] : '',
+      description: '',
+      ...(optionsList ? optionsList[idx] || {} : {}),
+    };
+  });
+};
 
 const drunkemonListData: SingleDrunkemon[] = [
   {
@@ -137,6 +164,17 @@ const drunkemonListData: SingleDrunkemon[] = [
     name: '巴大蝶',
     description: '採蜜採累了會在花朵上小歇一會，但常常會不小心睡過頭。',
   },
+  {
+    id: '13',
+    pokemonNo: 13,
+    pokemonImg: {
+      src: makeDrunkemonImgSrc('13'),
+    },
+    pokemonTypeList: [PokemonTypeEnum.bug],
+    name: '獨角蟲',
+    description: '',
+  },
+  ...makeDrunkemonDataByIdx(14, 82, undefined, drunkemonNames),
 ];
 
 // export default Array(20)
