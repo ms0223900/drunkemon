@@ -194,7 +194,7 @@ const drunkemonListData: SingleDrunkemon[] = [
     name: '大針蜂',
     description: '',
   },
-  ...makeDrunkemonDataByIdx(14, 82, undefined, drunkemonNames),
+  ...makeDrunkemonDataByIdx(16, 82, undefined, drunkemonNames),
 ];
 
 // export default Array(20)
