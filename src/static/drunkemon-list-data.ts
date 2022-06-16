@@ -1,6 +1,7 @@
 import { SingleDrunkemon } from 'common-types';
 import { PokemonTypeEnum } from 'src/types';
 import drunkemonNames from './drunkemon-names-data';
+import drunkemonOptionListData from './drunkemon-option-list';
 
 const makeDrunkemonImgSrc = (meta = '01') =>
   `./assets/drunkemons/drunkemon-${meta}.JPG`;
@@ -8,7 +9,7 @@ const makeDrunkemonImgSrc = (meta = '01') =>
 const makeDrunkemonDataByIdx = (
   startIdx = 0,
   amount = 100,
-  optionsList?: SingleDrunkemon[],
+  optionsList?: Partial<SingleDrunkemon>[],
   nameList?: string[]
 ): SingleDrunkemon[] => {
   const arr = Array(amount).fill(0);
@@ -172,7 +173,7 @@ const drunkemonListData: SingleDrunkemon[] = [
     },
     pokemonTypeList: [PokemonTypeEnum.bug],
     name: '獨角蟲',
-    description: '',
+    description: '喜歡把玩啤酒的空罐子，剩餘的酒精就足以讓它醉倒。',
   },
   {
     id: '14',
@@ -194,7 +195,7 @@ const drunkemonListData: SingleDrunkemon[] = [
     name: '大針蜂',
     description: '',
   },
-  ...makeDrunkemonDataByIdx(16, 82, undefined, drunkemonNames),
+  ...makeDrunkemonDataByIdx(16, 82, drunkemonOptionListData, drunkemonNames),
 ];
 
 // export default Array(20)
