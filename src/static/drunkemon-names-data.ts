@@ -81,6 +81,7 @@ const drunkemonNames = [
   '大岩蛇',
   '催眠貘',
   '引夢貘人',
+  '大鉗蟹',
 ];
 
 export default drunkemonNames;

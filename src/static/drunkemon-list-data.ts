@@ -183,7 +183,7 @@ const drunkemonListData: SingleDrunkemon[] = [
     },
     pokemonTypeList: [PokemonTypeEnum.bug],
     name: '鐵殼蛹',
-    description: '',
+    description: '會躲在充滿酒瓶裡，據說是為了抵禦天敵而發展出這種習性。',
   },
   {
     id: '15',
@@ -193,9 +193,10 @@ const drunkemonListData: SingleDrunkemon[] = [
     },
     pokemonTypeList: [PokemonTypeEnum.bug],
     name: '大針蜂',
-    description: '',
+    description:
+      '大針鋒不產蜜，喜歡喝三蜜蜂所產的蜜釀造的酒，會為了蜂蜜保護他們。',
   },
-  ...makeDrunkemonDataByIdx(16, 82, drunkemonOptionListData, drunkemonNames),
+  ...makeDrunkemonDataByIdx(16, 83, drunkemonOptionListData, drunkemonNames),
 ];
 
 // export default Array(20)
