@@ -196,7 +196,7 @@ const drunkemonListData: SingleDrunkemon[] = [
     description:
       '大針鋒不產蜜，喜歡喝三蜜蜂所產的蜜釀造的酒，會為了蜂蜜保護他們。',
   },
-  ...makeDrunkemonDataByIdx(16, 83, drunkemonOptionListData, drunkemonNames),
+  ...makeDrunkemonDataByIdx(16, 84, drunkemonOptionListData, drunkemonNames),
 ];
 
 // export default Array(20)
